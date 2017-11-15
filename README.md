@@ -5,7 +5,7 @@
 
 效果如下：
 
-![即刻点赞](gifs/JiKeZan1.gif)
+![即刻点赞](gifs/JiKeZan.gif)
 
 
 
