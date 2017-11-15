@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ZanIconView">
+        <attr name="icon_unselected" format="reference" />
+        <attr name="icon_selected" format="reference" />
+        <attr name="circle_color" format="color|reference" />
+        <attr name="circle_stroke_width" format="dimension|reference" />
+        <attr name="circle_radius_spacing" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ZanCountView">
+        <attr name="count" format="integer" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="text_size" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="JiKeZanView">
+        <attr name="zan_icon_unselected" format="reference" />
+        <attr name="zan_icon_selected" format="reference" />
+        <attr name="zan_circle_color" format="color|reference" />
+        <attr name="zan_circle_stroke_width" format="dimension|reference" />
+        <attr name="zan_circle_radius_spacing" format="dimension|reference" />
+        <attr name="zan_drawable_padding" format="dimension|reference" />
+        <attr name="zan_count" format="integer" />
+        <attr name="zan_text_color" format="color|reference" />
+        <attr name="zan_text_size" format="dimension|reference" />
+    </declare-styleable>
+
+</resources>
