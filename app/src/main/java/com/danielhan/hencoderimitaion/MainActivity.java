@@ -1,32 +1,42 @@
 package com.danielhan.hencoderimitaion;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-import com.danielhan.hencoderimitaion.jikezan.JiKeZanView;
+/**
+ * @author DanielHan
+ * @date 2017/11/16
+ */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private JiKeZanView zanview;
-    private EditText et;
-    private Button btn;
+    private Button btn_jikezan;
+    private Button btn_flipboard;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        zanview = (JiKeZanView) findViewById(R.id.zanview);
-        et = (EditText) findViewById(R.id.et);
-        btn = (Button) findViewById(R.id.btn);
+        btn_jikezan = (Button) findViewById(R.id.btn_jikezan);
+        btn_flipboard = (Button) findViewById(R.id.btn_flipboard);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                zanview.setCount(Integer.parseInt(et.getText().toString()));
-            }
-        });
+        btn_jikezan.setOnClickListener(this);
+        btn_flipboard.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_jikezan:
+                startActivity(new Intent(this, JiKeZanActivity.class));
+                break;
+            case R.id.btn_flipboard:
+                startActivity(new Intent(this, FlipboardActivity.class));
+                break;
+        }
     }
 }

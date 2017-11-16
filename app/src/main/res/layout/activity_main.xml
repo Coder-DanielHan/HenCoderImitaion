@@ -7,27 +7,19 @@
     android:clipChildren="false"
     android:orientation="vertical">
 
-    <com.danielhan.hencoderimitaion.jikezan.JiKeZanView
-        android:id="@+id/zanview"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_margin="20dp"
-        android:padding="20dp"
-        app:zan_drawable_padding="20dp"
-        app:zan_count="45"/>
-
-    <EditText
-        android:id="@+id/et"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="请输入数字"
-        android:inputType="number" />
-
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/btn_jikezan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="setNum"
-        android:text="设置" />
+        android:text="即刻点赞"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btn_flipboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flipboard翻页"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>

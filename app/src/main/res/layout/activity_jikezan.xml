@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <com.danielhan.hencoderimitaion.jikezan.JiKeZanView
+        android:id="@+id/zanview"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        app:zan_drawable_padding="20dp"
+        app:zan_count="45"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入数字"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setNum"
+        android:text="设置" />
+
+</LinearLayout>
